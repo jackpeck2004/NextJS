@@ -1,38 +1,40 @@
 import Link from 'next/link';
 
+import Logo from '../Components/Logo'
+
 const Header = () => (
   <div className="container">
     <nav>
       <ul>
-        <li className='Logo'>
-          <Link href='/'>
-            <a>Giacomo Pasin</a>
-          </Link>
-        </li>
-      </ul>
-      <ul>  
-        <li>
-          <Link href="/">
+        <li className="left-content">
+          <Link href="/" className="left-content">
             <a>Home</a>
           </Link>
         </li>
-        <li>
-          <Link href="/api">
+        <li className="left-content">
+          <Link href="/api" className="left-content">
             <a>api</a>
           </Link>
         </li>
-      
+        <li>
+          <Link href="/software">
+            <a>software</a>
+          </Link>
+        </li>
       </ul>
     </nav>
     <style jsx>{`
       .container {
         height: 10vh;
+        width:100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         font-family: sans-serif;
         background-color: transparent;
         text-transform: uppercase;
+        position:fixed;
+        background-color: rgba(255,255,255,0.3);
       }
       ul {
         padding: 0;
@@ -85,7 +87,7 @@ const Header = () => (
         transform-origin: right;
       }
 
-      .Logo{
+      .Logo {
         justify-content: flex-start;
       }
     `}</style>

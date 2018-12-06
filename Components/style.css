@@ -1,0 +1,43 @@
+﻿.pannel1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.pannel2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    font-size: 80px;
+    font-family: arial;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.pannel1__readMore {
+    text-transform: uppercase;
+    font-size: 30px;
+    display: flex;
+    height: 15vh;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    letter-spacing: 20px;
+}
+
+.readMore {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.readMore:hover {
+    cursor: pointer;
+}

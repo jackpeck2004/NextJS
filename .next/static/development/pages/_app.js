@@ -9137,7 +9137,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __NEXT_REGISTER_PAGE('/_app', function() {
-module.exports = __webpack_require__(/*! /Users/jackpeck/Documents/dev/NextJS/node_modules/next/dist/pages/_app.js */"./node_modules/next/dist/pages/_app.js");
+module.exports = __webpack_require__(/*! /Users/jackpeck/Documents/dev/GiacomoPasinWebsite/GiacomoPasinWebsite/NextJS/node_modules/next/dist/pages/_app.js */"./node_modules/next/dist/pages/_app.js");
 
 return { page: module.exports.default }});
 
