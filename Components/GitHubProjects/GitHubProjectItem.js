@@ -19,13 +19,10 @@ const GitHubProjectItem = ({ item }) => {
                     color: black;
                     font-family: sans-serif;
                     width: 150%;
-                    max-width: 80em;
                     text-align: center;
                     border: 1px solid black;
                     margin-bottom: 10vh;
                     padding-bottom: 10vh;
-                    margin-left: 25%;
-                    margin-right: 25%;
                     transition: all .2s ease-in-out;
                     border-radius: 12px;
                 }

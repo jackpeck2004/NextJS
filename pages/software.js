@@ -80,7 +80,6 @@ class Software extends Component {
       }
     
       .pannel2 {
-        width: 100%;
       }
       .header {
         font-size: 80px;
