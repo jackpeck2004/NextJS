@@ -82,6 +82,7 @@ class Software extends Component {
       .pannel2 {
         margin: 0;
         padding: 0;
+        background: transparent;
         
       }
       .header {
@@ -112,6 +113,16 @@ class Software extends Component {
 
       .readMore:hover{
         cursor: pointer;
+      }
+
+      @media only screen and (min-width: 2000px) {
+        .pannel2 {
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 12.5%;
+          padding: 0;
+        }
       }
     `
       } </style>

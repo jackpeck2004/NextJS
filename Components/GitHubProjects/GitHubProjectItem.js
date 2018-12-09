@@ -8,7 +8,7 @@ const GitHubProjectItem = ({ item }) => {
                 <p>{item.description}</p>
          </div>
             <div className='skills'>
-                <p>Develoed Skills: {item.other_languages}</p>
+                <p>Develped Languages: {item.main_language}, {item.other_languages}</p>
             </div>
         <style jsx global > {
                 `
@@ -26,6 +26,8 @@ const GitHubProjectItem = ({ item }) => {
                     transition: all .2s ease-in-out;
                     border-radius: 12px;
                 }
+
+
 
                 strong{
                     font-size: 40px;
