@@ -3,13 +3,13 @@
     "name": "Snake JS",
     "description": "Snake is an 8bit game that I refusrbished and coded in JavaScript to understand how the language works",
     "img": "",
-    "language": "JavaScript"
+    "main_language": "JavaScript",
+    "other_languages": "HTML5"
   },
   {
-    "name": "Test"
-  },
-  {
-    "name": "Test 2",
-    "description": "uisdgzvciuysdjgzuficjsgz"
-   }
+    "name": "Hype Steal",
+    "description": "Hype Steal is the ultimate shopping method where to purchase products of extreme high-quality brands.",
+    "main_language": "ReactJS",
+    "other_languages":  "JSON, JavaScript, HTML5, CSS3"
+  }
 ]

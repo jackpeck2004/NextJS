@@ -3,10 +3,13 @@ import React, { Component } from 'react'
 const GitHubProjectItem = ({ item }) => {
     return ( 
     <div className = 'ghProject' >
-        <p className='projectHeader'>{item.name} <strong>|</strong> {item.language}</p> 
+        <p className='projectHeader'>{item.name} <strong>|</strong> {item.main_language}</p> 
         <div className='description'>
-        <p>{item.description}</p>
-        </div>
+                <p>{item.description}</p>
+         </div>
+            <div className='skills'>
+                <p>Develoed Skills: {item.other_languages}</p>
+            </div>
         <style jsx global > {
                 `
                 .ghProject{
@@ -16,10 +19,13 @@ const GitHubProjectItem = ({ item }) => {
                     color: black;
                     font-family: sans-serif;
                     width: 150%;
+                    max-width: 80em;
                     text-align: center;
                     border: 1px solid black;
                     margin-bottom: 10vh;
                     padding-bottom: 10vh;
+                    margin-left: 25%;
+                    margin-right: 25%;
                     transition: all .2s ease-in-out;
                     border-radius: 12px;
                 }
