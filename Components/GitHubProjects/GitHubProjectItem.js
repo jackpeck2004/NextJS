@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 const GitHubProjectItem = ({ item }) => {
-    return ( 
+    return (
+        <Link href={item.link}>
+        <a className='link'>
     <div className = 'ghProject' >
         <p className='projectHeader'>{item.name} <strong>|</strong> {item.main_language}</p> 
         <div className='description'>
@@ -27,6 +30,9 @@ const GitHubProjectItem = ({ item }) => {
                     border-radius: 12px;
                 }
 
+                .link{
+                    text-decoration: none;
+                }
 
 
                 strong{
@@ -51,6 +57,8 @@ const GitHubProjectItem = ({ item }) => {
                  `
       } </style>
     </div>
+    </a>
+    </Link>
     )
 }
 

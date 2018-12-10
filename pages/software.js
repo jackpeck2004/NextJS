@@ -77,6 +77,7 @@ class Software extends Component {
         justify-content: center;
         color: whitesmoke;
         letter-spacing: 20px;
+        font-weight: lighter;
       }
     
       .pannel2 {
@@ -103,12 +104,13 @@ class Software extends Component {
         justify-content: center;
         color: whitesmoke;
         letter-spacing: 20px;
+        font-weight: lighter;
       }
       .readMore {
         text-decoration: none;
         color: white;
         font-weight: lighter;
-        font-family: arial;
+        font-family: sans-serif;
       }
 
       .readMore:hover{
