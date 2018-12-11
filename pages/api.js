@@ -6,11 +6,11 @@ const API = () => (
       <div className="pannel1">
         <form className='box'>
           <p className='header'>API LOGIN</p>
-          <input type='text' placeholder='Username' />
+          <input type='text' placeholder='Username' id='user'/>
           <br />
-          <input type='password' placeholder='Password' />
+          <input type='password' placeholder='Password' id='pass'/>
           <br />
-          <input type='submit' value='Login' />
+          <input type='button' value='Login' onClick={submit}/>
         </form>
       </div>
     </Layout>
@@ -66,7 +66,7 @@ const API = () => (
          border-color: #2ecc71;
        }
 
-       .box input[type = 'submit']{
+       .box input[type = 'button']{
         border: 0;
         background: none;
         display: block;
@@ -83,12 +83,39 @@ const API = () => (
         font-size: 20px;
        }
 
-       .box input[type = 'submit']:hover{
+       .box input[type = 'button']:hover{
          background: #2ecc71;
        }
       
     `}</style>
   </div>
 );
+
+function  submit() {
+  var username = document.getElementById('user');
+  var password = document.getElementById('pass');
+
+  var coruser = null;
+  var corpass = null;
+
+  var user = null;
+  var pass = null;
+
+  CheckGiacomo();
+
+  function CheckGiacomo() {
+    let coruser = 'giacomo';
+    let user = username.value;
+
+    if (user == coruser){
+      let corpass = 'password';
+      let pass = password.value;
+
+      if (pass == corpass) {
+        window.location.href = '/api/submit';
+      }
+    }
+  }
+}
 
 export default API;
