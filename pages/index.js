@@ -25,7 +25,7 @@ const Index = () => (
       }
 
       .pannel1index {
-        background-image: url(https://images.unsplash.com/photo-1536302829663-a460b9ec95b9?auto=format&fi…aWQiOjEyMDd9&ixlib=rb-0.3.5&q=80&s=973ec41…&w=3155);
+	      background-image url("https://images.unsplash.com/photo-1547213529-98a94130a2f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80");
         background-size: cover;
         height: 100vh;
       }

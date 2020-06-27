@@ -19,5 +19,12 @@
     "description" : "A console way to manage all the sells of the restaurant - work in progress",
     "main_language" : "Python",
     "other_languages" : "Trying to switch to Java"
+  },
+  {
+    "name": "Test",
+    "description": "none",
+    "main_language": "C++",
+    "other_languages": "",
+    "link": "http://google.com"
   }
 ]

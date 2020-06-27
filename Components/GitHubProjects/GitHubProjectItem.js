@@ -17,11 +17,9 @@ const GitHubProjectItem = ({ item }) => {
                 `
                 .ghProject{
                     background: transparent;
-                    height: 100%;
-                    min-height: 100%;
                     color: black;
                     font-family: sans-serif;
-                    width: 150%;
+                    width: 200%;
                     text-align: center;
                     border: 1px solid black;
                     margin-bottom: 10vh;
@@ -54,6 +52,11 @@ const GitHubProjectItem = ({ item }) => {
                     text-align: center;
                     font-size: 30px;
                 }
+
+                @media only screen and (min-width: 1350px) {
+                    .pannel2{
+                    }
+                  }
                  `
       } </style>
     </div>

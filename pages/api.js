@@ -22,17 +22,15 @@ const API = () => (
         font-family: arial;
         letter-spacing: 20px;
         text-transform: uppercase;
-        color: white;
       }
 
       .box{
-        width: 50vh;
+        width: 100%;
         padding: 40px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #191919;
         text-align: center;
       }
       .pannel1 {
@@ -49,22 +47,27 @@ const API = () => (
         border:0;
         background: none;
         display: block;
-        margin 20px auto;
+        margin: 20px auto;
         text-align:center;
         border: 2px solid #3498db;
         padding: 14px 10px;
-        width 200px;
+        width: 15%;
         outline: none;
-        color: white;
+        color: black;
         border-radius: 24px;
         transition: 0.25s;
         font-size: 20px;
       }
 
        .box input[type = 'text']:focus, .box input[type = 'password']:focus{
-         width: 280px;
-         border-color: #2ecc71;
+         width: 25%;
+         background-color: #3498db;
        }
+       .box input::placeholder:focus, .box input::placeholder:focus{
+         color: white;
+       }
+
+
 
        .box input[type = 'button']{
         border: 0;
@@ -76,7 +79,7 @@ const API = () => (
         padding: 14px 10px;
         width 200px;
         outline: none;
-        color: white;
+        color: black;
         border-radius: 24px;
         transition: 0.25s;
         cursor: pointer;
@@ -112,7 +115,7 @@ function  submit() {
       let pass = password.value;
 
       if (pass == corpass) {
-        window.location.href = '/api/submit';
+        window.location.href = '/api/submit/' + user;
       }
     }
   }

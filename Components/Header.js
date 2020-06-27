@@ -34,7 +34,7 @@ const Header = () => (
         background-color: transparent;
         text-transform: uppercase;
         position:fixed;
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(255,255,255,0.01);
       }
       ul {
         padding: 0;
@@ -49,7 +49,7 @@ const Header = () => (
 
       a {
         text-decoration: none;
-        color: #3d3d3d;
+        color: black;
         font-size: 22px;
         display: block;
         padding: 10px 45px;

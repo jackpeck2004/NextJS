@@ -28,7 +28,7 @@ class Software extends Component {
     }
     return (
       <div>
-      <div>
+      <div className='App'>
         <Layout>
           <br/>
           <div className='backgroundImg'>
@@ -56,8 +56,10 @@ class Software extends Component {
         `
 
       .backgroundImg{
-        background-image: url(https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+        background-image: url(https://images.pexels.com/photos/825258/pexels-photo-825258.jpeg?cs=srgb&dl=board-circuit-board-circuits-825258.jpg&fm=jpg);
         background-size: cover;
+        margin: 0;
+        padding: 0;
       }
       .pannel1 {
         display: flex;
@@ -65,6 +67,7 @@ class Software extends Component {
         align-items: center;
         height: 85vh;
         margin: 0;
+        padding: 0;
       }
 
       .pannel1__readMore {
@@ -79,13 +82,12 @@ class Software extends Component {
         letter-spacing: 20px;
         font-weight: lighter;
       }
-    
-      .pannel2 {
-        margin: 0;
-        padding: 0;
-        background: transparent;
-        
+
+      .pannel2{
+        margin: 0 auto;
+        margin-left: 12.5%;
       }
+
       .header {
         font-size: 80px;
         font-family: arial;
@@ -126,6 +128,17 @@ class Software extends Component {
           padding: 0;
         }
       }
+      @media only screen and (min-width: 1000px) {
+        .pannel2 {
+          display: flex;
+          justift-content: center;
+          align-items: center;
+          margin-right: 12.5%;
+          padding: 0;
+        }
+      }
+      
+
     `
       } </style>
       </div>
